@@ -184,8 +184,6 @@
     </div>
   </section>
 
-    </section>
-
   <!-- About Section -->
   <section id="about" class="section about-section">
     <div class="container about-inner">
@@ -334,47 +332,105 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section section-muted">
-    <div class="container">
-      <h2 class="section-title">Let’s Talk</h2>
-      <p class="section-subtitle">
-        Tell us a little about your business and what you need. We’ll reply within one business day.
-      </p>
+<section id="contact" class="section section-muted">
+  <div class="container">
+    <h2 class="section-title">Let’s Talk</h2>
 
-      <div class="grid contact-grid">
-        <div>
-          <h3>Contact Details</h3>
-          <p><strong>Email:</strong> victor@brightsite.design</p>
-          <p><strong>Phone:</strong> (210) 895-0125</p>
-          <p><strong>Based in:</strong> San Antonio, Texas</p>
-          <p class="small">
-            Prefer text or voice notes? That works too. Just mention what works best for you.
-          </p>
-        </div>
+    <p class="section-subtitle">
+      Tell us a little about your business and what you need.
+      We’ll reply within one business day.
+    </p>
 
+    <div class="grid contact-grid">
+      <div>
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> victor@brightsite.design</p>
+        <p><strong>Phone:</strong> (210) 895-0125</p>
+        <p><strong>Based in:</strong> San Antonio, Texas</p>
 
+        <p class="small">
+          Prefer text or voice notes? That works too.
+          Just mention what works best for you.
+        </p>
+      </div>
 
-<form
-  action="https://formspree.io/f/xpwvrzkk"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        class="contact-form"
+      >
+        <input type="hidden" name="form-name" value="contact">
 
+        <p hidden>
+          <label>
+            Don’t fill this out:
+            <input name="bot-field">
+          </label>
+        </p>
 
+        <label for="contact-name">Your name</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          autocomplete="name"
+          required
+        >
+
+        <label for="contact-business">Business name</label>
+        <input
+          type="text"
+          id="contact-business"
+          name="business"
+          autocomplete="organization"
+        >
+
+        <label for="contact-email">Your email</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          autocomplete="email"
+          required
+        >
+
+        <label for="contact-phone">Phone number</label>
+        <input
+          type="tel"
+          id="contact-phone"
+          name="phone"
+          autocomplete="tel"
+        >
+
+        <label for="contact-service">What do you need?</label>
+        <select id="contact-service" name="service">
+          <option value="">Select an option</option>
+          <option value="New website">New website</option>
+          <option value="Website redesign">Website redesign</option>
+          <option value="Website maintenance">Website maintenance</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="contact-message">
+          Tell me about your project
+        </label>
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
  
-  </section>
-
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
 <p>© <span id="year"></span> BrightSite Design. All rights reserved.</p>
