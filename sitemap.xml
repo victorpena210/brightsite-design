@@ -2,16 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://brightsite.design/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
   </url>
 
   <url>
-    <loc>https://brightsite.design/about.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://brightsite.design/web-design-san-antonio</loc>
+    <lastmod>2026-08-03</lastmod>
   </url>
 
   <url>
-    <loc>https://brightsite.design/seo-aeo-keyword-research.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://brightsite.design/seo-aeo-keyword-research</loc>
+    <lastmod>2026-08-03</lastmod>
+  </url>
+
+  <url>
+    <loc>https://brightsite.design/about</loc>
+    <lastmod>2026-08-03</lastmod>
   </url>
 </urlset>
