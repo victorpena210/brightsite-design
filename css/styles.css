@@ -546,5 +546,64 @@ textarea {
     height: 275px;
   }
 }
-  
+
+/* Consistent responsive navigation */
+
+.header-inner {
+  max-width: 1280px;
 }
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav-links {
+  gap: 0.35rem;
+}
+
+.nav-links a {
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.15rem;
+    width: min(260px, calc(100vw - 2rem));
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li,
+  .nav-links a {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.6rem 0.75rem;
+  }
+}
+  
+
