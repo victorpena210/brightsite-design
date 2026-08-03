@@ -25,6 +25,22 @@ a {
   text-decoration: none;
 }
 
+main p a:not(.btn) {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main p a:not(.btn):hover,
+main p a:not(.btn):focus-visible {
+  color: #1d4ed8;
+}
+
+.card h3 a:hover,
+.card h3 a:focus-visible {
+  color: #2563eb;
+}
+
 /* Layout helpers */
 
 .container {
