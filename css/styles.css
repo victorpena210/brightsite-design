@@ -621,5 +621,55 @@ textarea {
     padding: 0.6rem 0.75rem;
   }
 }
+
+/* Article authorship, dates, citations, and sources */
+
+.article-meta {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #60a5fa;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.article-meta p {
+  margin: 0.2rem 0;
+}
+
+.article-meta a,
+.source-list a {
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.citation-link {
+  margin-left: 0.15rem;
+  color: #1d4ed8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.citation-link:hover,
+.citation-link:focus {
+  text-decoration: underline;
+}
+
+.article-sources {
+  max-width: 840px;
+  margin-top: 2rem;
+}
+
+.source-list {
+  margin: 1.5rem 0 0;
+  padding-left: 1.5rem;
+  color: #4b5563;
+}
+
+.source-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.65;
+}
   
 
