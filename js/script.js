@@ -4,13 +4,15 @@ const navLinks = document.querySelector(".nav-links");
 
 if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    const isOpen = navLinks.classList.toggle("show");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Close on link click (mobile)
-  navLinks.addEventListener("click", (e) => {
-    if (e.target.tagName.toLowerCase() === "a") {
+  // Close the menu after a navigation link is selected
+  navLinks.addEventListener("click", (event) => {
+    if (event.target.tagName.toLowerCase() === "a") {
       navLinks.classList.remove("show");
+      navToggle.setAttribute("aria-expanded", "false");
     }
   });
 }

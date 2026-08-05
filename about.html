@@ -75,8 +75,7 @@
         "name": "Victor Peña",
         "jobTitle": "Owner and Web Developer",
         "url": "https://brightsite.design/about",
-        "image": "https://brightsite.design/images/victor-pena-headshot.png",
-        "worksFor": {
+        "image": "https://brightsite.design/images/victor-pena-headshot.webp",        "worksFor": {
           "@id": "https://brightsite.design/#organization"
         },
         "homeLocation": {
@@ -142,13 +141,15 @@
     <section class="section about-section">
       <div class="container about-inner">
         <div class="about-photo-wrapper">
-          <img
-            src="images/victor-pena-headshot.png"
-            alt="Victor Peña, owner and web developer at BrightSite Design"
-            class="about-photo"
-            width="1024"
-            height="1536"
-          >
+        <img
+          src="images/victor-pena-headshot.webp"
+          alt="Victor Peña, owner and web developer at BrightSite Design"
+          class="about-photo"
+          width="800"
+          height="1200"
+          fetchpriority="high"
+          decoding="async"
+        >
         </div>
 
         <div class="about-content">
@@ -260,28 +261,10 @@
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
+  </footer>
 
-    if (navToggle && navLinks) {
-      navToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("show");
-        navToggle.setAttribute("aria-expanded", String(isOpen));
-      });
-
-      navLinks.addEventListener("click", (event) => {
-        if (event.target.tagName.toLowerCase() === "a") {
-          navLinks.classList.remove("show");
-          navToggle.setAttribute("aria-expanded", "false");
-        }
-      });
-    }
-
-    const year = document.getElementById("year");
-    if (year) {
-      year.textContent = new Date().getFullYear();
-    }
-  </script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
 </body>
 </html>
