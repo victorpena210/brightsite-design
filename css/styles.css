@@ -1741,3 +1741,227 @@ textarea {
     min-height: 360px;
   }
 }
+
+
+/* Products hub */
+.nav-links a[aria-current="page"] {
+  background-color: #e5f0ff;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.products-hero {
+  padding: 5rem 0 4.25rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.products-hero-inner {
+  max-width: 760px;
+  text-align: center;
+}
+
+.products-hero h1 {
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(2.35rem, 5vw, 3.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.products-hero p:not(.about-label) {
+  margin: 0 auto;
+  max-width: 690px;
+  color: #4b5563;
+  font-size: 1.05rem;
+}
+
+.products-featured {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  padding: 1.4rem;
+  background-color: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 1.4rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.products-preview {
+  padding: 1.2rem;
+  border-radius: 1.1rem;
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.products-preview-top,
+.products-preview-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.products-preview-top {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.products-preview-top > div,
+.products-preview-row > div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.products-preview-label,
+.products-preview-row span,
+.products-preview-stats span {
+  color: #94a3b8;
+  font-size: 0.76rem;
+}
+
+.products-preview-label {
+  color: #60a5fa;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.products-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.12);
+  color: #bbf7d0;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.products-live span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.products-preview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+
+.products-preview-stats > div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.products-preview-stats strong {
+  font-size: 0.95rem;
+}
+
+.products-preview-row {
+  margin-top: 0.55rem;
+  padding: 0.75rem 0.8rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.products-preview-row > span {
+  color: #bfdbfe;
+  font-weight: 600;
+}
+
+.products-featured-copy h3 {
+  margin: 0.9rem 0 0.75rem;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.15;
+}
+
+.products-featured-copy > p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.products-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.25rem;
+}
+
+.products-values {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.products-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.products-cta h2 {
+  margin: 0.35rem 0 0.4rem;
+}
+
+.products-cta p:not(.about-label) {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* The extra Products item makes the desktop nav wider. Collapse it before it crowds. */
+@media (max-width: 1120px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    min-width: 210px;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-hero {
+    padding: 3.8rem 0 3.2rem;
+  }
+
+  .products-featured,
+  .products-values {
+    grid-template-columns: 1fr;
+  }
+
+  .products-featured {
+    gap: 1.4rem;
+    padding: 0.9rem;
+  }
+
+  .products-preview-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .products-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
