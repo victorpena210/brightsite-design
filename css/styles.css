@@ -793,9 +793,9 @@ textarea {
   
 
 
-/* routeflow product page */
+/* RoutePulse product page */
 
-.routeflow-page {
+.routepulse-page {
   background: #f8fafc;
 }
 
@@ -1553,7 +1553,7 @@ textarea {
   text-align: center;
 }
 
-/* routeflow card on BrightSite homepage */
+/* RoutePulse card on BrightSite homepage */
 
 .coming-projects {
   display: grid;
@@ -1567,7 +1567,7 @@ textarea {
   margin-top: 1.25rem;
 }
 
-.routeflow-preview {
+.routepulse-preview {
   position: relative;
   min-height: 430px;
   display: flex;
@@ -1580,7 +1580,7 @@ textarea {
     linear-gradient(145deg, #0f172a 0%, #172554 100%);
 }
 
-.routeflow-preview::after {
+.routepulse-preview::after {
   content: "";
   position: absolute;
   inset: auto -20% -45% 20%;
@@ -1590,7 +1590,7 @@ textarea {
   transform: rotate(-12deg);
 }
 
-.routeflow-preview-panel {
+.routepulse-preview-panel {
   position: relative;
   z-index: 1;
   width: min(100%, 410px);
@@ -1602,7 +1602,7 @@ textarea {
   color: #e2e8f0;
 }
 
-.routeflow-preview-brand {
+.routepulse-preview-brand {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1610,12 +1610,12 @@ textarea {
   margin-bottom: 0.85rem;
 }
 
-.routeflow-preview-brand strong {
+.routepulse-preview-brand strong {
   color: #ffffff;
   font-size: 1.15rem;
 }
 
-.routeflow-preview-brand span {
+.routepulse-preview-brand span {
   padding: 0.3rem 0.5rem;
   border-radius: 999px;
   background: rgba(34, 197, 94, 0.12);
@@ -1624,44 +1624,44 @@ textarea {
   font-weight: 700;
 }
 
-.routeflow-preview-stat {
+.routepulse-preview-stat {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.55rem;
 }
 
-.routeflow-preview-stat div,
-.routeflow-preview-row {
+.routepulse-preview-stat div,
+.routepulse-preview-row {
   padding: 0.75rem;
   border: 1px solid #334155;
   border-radius: 0.7rem;
   background: rgba(30, 41, 59, 0.75);
 }
 
-.routeflow-preview-stat span,
-.routeflow-preview-stat strong,
-.routeflow-preview-row span,
-.routeflow-preview-row strong {
+.routepulse-preview-stat span,
+.routepulse-preview-stat strong,
+.routepulse-preview-row span,
+.routepulse-preview-row strong {
   display: block;
 }
 
-.routeflow-preview-stat span,
-.routeflow-preview-row span {
+.routepulse-preview-stat span,
+.routepulse-preview-row span {
   color: #94a3b8;
   font-size: 0.68rem;
 }
 
-.routeflow-preview-stat strong,
-.routeflow-preview-row strong {
+.routepulse-preview-stat strong,
+.routepulse-preview-row strong {
   margin-top: 0.15rem;
   color: #f8fafc;
 }
 
-.routeflow-preview-row {
+.routepulse-preview-row {
   margin-top: 0.55rem;
 }
 
-.routeflow-preview-row strong {
+.routepulse-preview-row strong {
   color: #fcd34d;
 }
 
@@ -1737,7 +1737,7 @@ textarea {
     min-height: 310px;
   }
 
-  .routeflow-preview {
+  .routepulse-preview {
     min-height: 360px;
   }
 }
