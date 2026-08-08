@@ -793,9 +793,9 @@ textarea {
   
 
 
-/* ShuttleFlow product page */
+/* routeflow product page */
 
-.shuttleflow-page {
+.routeflow-page {
   background: #f8fafc;
 }
 
@@ -1553,7 +1553,7 @@ textarea {
   text-align: center;
 }
 
-/* ShuttleFlow card on BrightSite homepage */
+/* routeflow card on BrightSite homepage */
 
 .coming-projects {
   display: grid;
@@ -1567,7 +1567,7 @@ textarea {
   margin-top: 1.25rem;
 }
 
-.shuttleflow-preview {
+.routeflow-preview {
   position: relative;
   min-height: 430px;
   display: flex;
@@ -1580,7 +1580,7 @@ textarea {
     linear-gradient(145deg, #0f172a 0%, #172554 100%);
 }
 
-.shuttleflow-preview::after {
+.routeflow-preview::after {
   content: "";
   position: absolute;
   inset: auto -20% -45% 20%;
@@ -1590,7 +1590,7 @@ textarea {
   transform: rotate(-12deg);
 }
 
-.shuttleflow-preview-panel {
+.routeflow-preview-panel {
   position: relative;
   z-index: 1;
   width: min(100%, 410px);
@@ -1602,7 +1602,7 @@ textarea {
   color: #e2e8f0;
 }
 
-.shuttleflow-preview-brand {
+.routeflow-preview-brand {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1610,12 +1610,12 @@ textarea {
   margin-bottom: 0.85rem;
 }
 
-.shuttleflow-preview-brand strong {
+.routeflow-preview-brand strong {
   color: #ffffff;
   font-size: 1.15rem;
 }
 
-.shuttleflow-preview-brand span {
+.routeflow-preview-brand span {
   padding: 0.3rem 0.5rem;
   border-radius: 999px;
   background: rgba(34, 197, 94, 0.12);
@@ -1624,44 +1624,44 @@ textarea {
   font-weight: 700;
 }
 
-.shuttleflow-preview-stat {
+.routeflow-preview-stat {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.55rem;
 }
 
-.shuttleflow-preview-stat div,
-.shuttleflow-preview-row {
+.routeflow-preview-stat div,
+.routeflow-preview-row {
   padding: 0.75rem;
   border: 1px solid #334155;
   border-radius: 0.7rem;
   background: rgba(30, 41, 59, 0.75);
 }
 
-.shuttleflow-preview-stat span,
-.shuttleflow-preview-stat strong,
-.shuttleflow-preview-row span,
-.shuttleflow-preview-row strong {
+.routeflow-preview-stat span,
+.routeflow-preview-stat strong,
+.routeflow-preview-row span,
+.routeflow-preview-row strong {
   display: block;
 }
 
-.shuttleflow-preview-stat span,
-.shuttleflow-preview-row span {
+.routeflow-preview-stat span,
+.routeflow-preview-row span {
   color: #94a3b8;
   font-size: 0.68rem;
 }
 
-.shuttleflow-preview-stat strong,
-.shuttleflow-preview-row strong {
+.routeflow-preview-stat strong,
+.routeflow-preview-row strong {
   margin-top: 0.15rem;
   color: #f8fafc;
 }
 
-.shuttleflow-preview-row {
+.routeflow-preview-row {
   margin-top: 0.55rem;
 }
 
-.shuttleflow-preview-row strong {
+.routeflow-preview-row strong {
   color: #fcd34d;
 }
 
@@ -1737,7 +1737,7 @@ textarea {
     min-height: 310px;
   }
 
-  .shuttleflow-preview {
+  .routeflow-preview {
     min-height: 360px;
   }
 }
